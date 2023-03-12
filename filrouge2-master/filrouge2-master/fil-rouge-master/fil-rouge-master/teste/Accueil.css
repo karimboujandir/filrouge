@@ -1,0 +1,219 @@
+*{
+  font-family: cursive;
+}
+body {
+  display: grid;
+  place-items: center;
+  min-height: 50vh;
+  background-color: #0f0e17;
+  
+}
+
+/* navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vh 5%;
+  align-items: center;
+  background: #f25f4c;
+}
+
+.logo {
+  color: #FFF;
+  font-size: 2.2vh;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #0f0e17;
+  padding: 8px 30px;
+  border-radius: 7px;
+  transition: all .3s ease;
+}
+
+ul li a:hover,
+ul li a.active {
+  color: #FFF;
+  background: #e53170;
+}
+
+#icon {
+  background-color: #f25f4c;
+  padding: 5px 7px 3px 7px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+#icon svg {
+  color: #FFF;
+  height: 28px;
+  transition: all .3s ease;
+}
+
+#icon:hover {
+  background: #FFF;
+}
+
+#icon:hover svg {
+  color: #f25f4c;
+}
+
+#checkbox,
+#icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+      border-bottom: 1px solid #455468;
+  }
+
+  ul {
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 71px);
+      background-color: #18283B;
+      left: 0;
+      top: 0;
+      text-align: center;
+      display: none;
+      margin-top: 71px;
+  }
+
+  ul li {
+      display: block;
+      padding: 10px 15px;
+  }
+
+  ul li a {
+      display: block;
+      padding: 10px 0;
+  }
+
+  #icon {
+      display: block;
+  }
+
+  #checkbox:checked~ul {
+      display: block;
+  }
+}
+
+/* fin navbar*/
+/* img */
+
+
+/* carte mangas */
+.container {
+  display: flex;
+  gap: 1%;
+  z-index: 1;
+}
+
+.container .items {
+  border-radius: 1em;
+  width: 20%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1em;
+  transition: 0.5s;
+  color: #e53170;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .container .items {
+    width: 48%;
+    margin-bottom: 2%;
+  }
+}
+
+.container .items:hover {
+  background: #0f0e17;
+  color: #0f0e17;
+}
+
+
+
+.container .items:hover ~ .items {
+  transform: translateX(4%) rotate(12deg) scale(0.9);
+  opacity: 0.8;
+}
+
+#horreur {
+  background: linear-gradient(#f25f4c, #e53170) no-repeat 0 0 / cover;
+  background-position: center 0%;
+  width: 20vh;
+  height: 0;
+  padding-bottom: 26%; 
+}
+
+#shonen {
+  background: linear-gradient(#f25f4c, #e53170) no-repeat 0 0 / cover;
+  background-position: center 0%;
+  width: 20vh;
+  height: 0;
+  padding-bottom: 26%; 
+}
+
+#romance {
+  background: linear-gradient(#f25f4c, #e53170) no-repeat 0 0 / cover;
+  background-position: center 0%;
+  width: 20vh;
+  height: 0;
+  padding-bottom: 26%; 
+}
+
+#humour {
+  background: linear-gradient(#f25f4c, #e53170) no-repeat 0 0 / cover;
+  background-position: center 0%;
+  width: 20vh;
+  height: 0;
+  padding-bottom: 26%; 
+}
+
+#life {
+  background: linear-gradient(#f25f4c, #e53170) no-repeat 0 0 / cover;
+  background-position: center 0%;
+  width: 20vh;
+  height: 0;
+  padding-bottom: 26%; 
+}
+#plus {
+  background: linear-gradient(#f25f4c, #e53170) no-repeat 0 0 / cover;
+  background-position: center 0%;
+  width: 20vh;
+  height: 0;
+  padding-bottom: 26%; 
+}
+
+
+
+  
+
+  
+/* navfooter */
+    .navigation {
+      display: flex;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 6.5%;
+      background-color: #f25f4c;
+      z-index: 2; 
+    }
